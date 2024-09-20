@@ -13,5 +13,5 @@ A simple and intuitive notes application that allows users to create, edit, and 
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/jatintyagi1/NoteApp.git
    ```
