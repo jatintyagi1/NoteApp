@@ -4,15 +4,21 @@ import NotFound from '../pages/NotFound';
 import MyNotes from '../pages/MyNotes';
 import AddNotes from '../pages/AddNotes';
 import Navbar from '../components/Navbar';
+import Signup from '../components/SignUp';
+import Login from '../components/Login';
+import Profile from '../pages/Profile';
 
 const AuthRoute = () => {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route element={<MyNotes />} path='//my-notes' />
-        <Route element={<AddNotes />} path='/add-note' />
+        <Route path="/my-notes" element={<MyNotes />} />
+        <Route path="/add-note" element={<AddNotes />} />
+        <Route path="/sign-up" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

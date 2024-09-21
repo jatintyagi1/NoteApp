@@ -7,11 +7,10 @@ const AddNote = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newNote = { title, content };
-        // Save to local storage (example)
+        // save to local storage
         const existingNotes = JSON.parse(localStorage.getItem('notes')) || [];
         existingNotes.push(newNote);
         localStorage.setItem('notes', JSON.stringify(existingNotes));
-
         // Reset form
         setTitle('');
         setContent('');
